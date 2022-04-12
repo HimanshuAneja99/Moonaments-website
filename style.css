@@ -1,0 +1,851 @@
+@font-face {
+    font-family: 'Cyrene';
+    src:  url('Media/Fonts/Cyrene\ Regular.otf') format('woff2');
+  }
+
+@font-face {
+    font-family: 'Avenir';
+    src:  url('Media/Fonts/Avenir.ttc') format('woff2');
+  }  
+
+body {
+    font-size: 16px;
+    color: #2C2B2B;
+    background: #F2ECE7;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav Bar */
+
+.navLogo {
+    align-items: center;
+    display: flex;
+    height: 128px;
+    padding: 0 80px;
+}
+
+.navLogo a{
+    margin: auto;    
+} 
+
+.logo {
+    margin: auto;
+    height: 96px;
+    width: 59px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #E2D7D0;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.menuHeader {
+    padding: 40px;
+    text-decoration: none;
+    font-family: 'Cyrene';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    color: #983826;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuHeader:hover, .menuHeader:focus {
+    text-decoration: underline;
+}
+
+.menuElements{
+    width: 500px;
+    margin: auto;
+}
+
+.row1menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row2menu {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menuElements a{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #2C2B2B;
+    text-decoration: none;
+}
+
+.menuElements a:hover{
+    color: #983826;
+}
+
+.menuContainer {
+    cursor: pointer;
+    height: 64px;
+    width: 64px;
+    top: 20px;
+    right: 80px;
+    position: absolute;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    font-size: 60px;
+}
+
+
+/* Hero Section */
+
+.heroContainer {
+    margin-top: 24px;
+    width: 100%;
+    height: 760px;
+    position: relative;
+}
+
+.heroCopy {
+position: absolute;
+top: 0px;
+left: 561px;
+font-family: Cyrene;
+font-size: 64px;
+text-align: center;
+}
+
+.heroimageContainer img{
+    width: 100%;;
+}
+
+.heroCopy1 {
+color: #983826;
+position: absolute;
+top: 600px;
+left: 480px;
+font-family: Cyrene;
+font-size: 160px;
+text-align: left;
+}
+
+.heroText {
+width: 326px;
+position: absolute;
+top: 104px;
+line-height: 150%;
+left: 80px;
+font-family: Avenir;
+font-weight: Regular;
+
+}
+
+.floatingButton {
+    cursor: pointer;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color:#983826;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    right: 48px;
+    bottom: 48px;
+    filter: drop-shadow(0px 1.2px 3.6px rgba(0, 0, 0, 0.1)) drop-shadow(0px 6.4px 14.4px rgba(0, 0, 0, 0.13));
+}
+
+/* Our Favorites */
+
+.favoritesContainer {
+    margin: 160px 80px 0px 80px;    
+}
+
+.productsContainer {
+    margin-top: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.productsContainer img{
+    width: 302px;
+    height: 420px;
+}
+
+.sectionHeader {
+font-family: 'cyrene';
+color: #983826;
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 100%;
+}
+
+.productDescription {
+display: flex;  
+justify-content: space-between;
+align-items: center;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+margin-top: 12px;
+}
+
+.Price{
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+color: #983826;
+}
+
+.productCard2 {
+    margin-top: 48px;
+}
+
+.productCard4 {
+    margin-top: 48px;
+}
+
+.buttonContainer {
+    display: flex;
+    width:226px;
+    justify-content: space-between;
+    margin: 64px auto;
+    /* align-items: center; */
+}
+
+.buttonLeft, .buttonRight {
+    border: 1px solid #983826;
+    box-sizing: border-box;
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    padding: 41px 30px;
+    cursor: pointer;
+}
+
+.buttonLeft:hover, .buttonRight:hover {
+    background-color: #983826;
+    transition: 0.3s;
+}
+
+.buttonLeft:hover > svg, .buttonRight:hover > svg{
+    fill: white;
+}
+
+.buttonleftSVG, .buttonrightSVG{
+    fill: #2C2B2B;
+}
+
+/* .buttonleftSVG:hover{
+    fill: white;
+} */
+
+/* Our Catalog */
+
+.catalogContainer {
+    margin: 160px 80px 0px 80px;
+}
+
+.catalogHeader {
+    font-family: 'Cyrene';
+    color: #983826;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    /* display: flex;
+    align-items: center; */
+}
+
+.catalogproductsContainer {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.necklaceLink{
+    text-decoration: none;
+    color: #2C2B2B;
+}
+
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.row2 {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalogCard {
+    padding: 32px;
+    border: 1px solid #983826;
+    box-sizing: border-box;
+}
+
+.catalogCard:hover{
+    background-color: #983826;
+    color: white;
+    transition: 0.5s;
+}
+
+.catalogCard:hover > svg {
+    fill: white;
+}
+
+.buttonrightSVG{
+    fill: #2C2B2B;
+}
+
+.catalogImage{
+    width: 336px;
+    height: 380px;
+}
+
+.catalogDescription {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 16px;
+    }
+
+
+/* New Collection */
+
+.collectionContainer {
+    margin: 160px 0px 0px 0px;
+    width: 100%;
+    background: #E2D7D0;
+    padding: 96px 0 96px 0px;
+}
+
+.collectionsubContainer {
+    margin-right: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collectionImage {
+    width: 735px;
+    height: 500px;
+}
+
+.collectiontextContainer {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.pretitle {
+    color: #554B4B;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.collectionHeader{
+    font-family: 'cyrene';
+    color: #983826;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+
+.exploreButton {
+    border: 1px solid #983826;
+    background-color: #E2D7D0;
+    box-sizing: border-box;
+    padding: 12px 40px;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.exploreButton p{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.exploreButton:hover{
+    background-color: #983826;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+
+/* Instagram */
+
+.instagramContainer {
+    margin: 160px 80px 0px 80px;
+    text-align: center;
+}
+
+.instaLink{
+    color: #983826;
+}
+
+/* Testimonial */
+
+.testimonialContainer {
+    background: #E2D7D0;
+    margin: 160px 0px 0px 0px;
+    padding: 96px 300px 32px 300px;
+}
+
+.testimonialsubContainer {
+    text-align: center;
+    width: 840px;
+}
+
+.testimonialContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.personImage {
+    width: 250px;
+    height: 250px;
+}
+
+.textContent {
+    text-align: left;
+    margin-top: -24px;
+    position: relative;
+}
+
+.textContent img{
+    position: relative;
+    top: 32px;
+}
+
+.textContent p{
+    width: 500px;
+    position: relative;
+    z-index: 2;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.testimonialName {
+    margin-top: 8px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: left;
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 160px;
+    margin-bottom: 48px;
+}
+
+.footerLine {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerContainer {
+    margin: 40px 80px 40px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categoryDiv a{
+    display: block;
+    margin-bottom: 16px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #554B4B;
+}
+
+.categoryHeader {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #2C2B2B;
+    margin-bottom: 16px;
+}
+
+.socialContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.socialContainer img{
+    margin-right: 8px;
+}
+
+.socialContainer a{
+    margin-bottom: 0px;
+}
+
+.signupHeader{
+    font-family: 'Cyrene';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #983826;
+    text-align: right;
+    margin-bottom: 12px;
+}
+
+.signupText{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: right;
+    color: #554B4B;
+    width: 355px;
+    margin-bottom: 16px;
+}
+
+.emailForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signupButton {
+    border: 1px solid #983826;
+    background-color:#F2ECE7;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.signupButton p{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.signupButton:hover{
+    background-color: #983826;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+.formInput {
+    border:none;
+    background: #F2ECE7;
+    border-bottom: 1.5px solid #554B4B ;
+    padding: 5px 10px;
+    outline: none;
+    width: 180px;
+ }
+
+.formInput::placeholder{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #554B4B;
+} 
+
+.copyrightText {
+    text-align: center;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #554B4B;
+}
+
+/* Blog Page */
+
+.blogHeader {
+    margin-top: 16px;
+    font-family: 'Cyrene';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 100%;
+    color: #983826;
+    text-align: center;
+}
+
+.cardsContainer{
+    margin: 80px;
+}
+
+.blogCard1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #983826;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 24px;
+}
+
+.cardImage{
+    margin-right: 40px;
+}
+
+.cardImage img{
+    width: 453px;
+    height: 316px;
+}
+
+.cardHeader{
+    font-family: 'cyrene';
+    color: #983826;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+
+.cardText {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.readButton {
+    border: 1px solid #983826;
+    background-color: #F2ECE7;
+    box-sizing: border-box;
+    padding: 12px 40px;
+    align-items: center;
+    display: flex;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.readButton p{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.readButton:hover{
+    background-color: #983826;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+.blogCard2 {
+    align-content:flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #983826;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 24px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.blogCard2 .cardImage{
+    margin-right: 0px;
+}
+
+.blogCard2 .cardText{
+    margin-right: 32px;
+}
+
+/* Necklaces Page */
+
+.necklace-header{
+    margin: 24px 80px 0px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-row{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.Necklace-heading{
+    font-family: 'Cyrene';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 100%;
+    color: #983826;
+}
+
+.Hero-topleft{
+    width: 260.23px;
+    height: 324px;
+    margin-right: 8px;
+}
+
+.bottom-row{
+    display: flex;
+    align-items: center;
+}
+
+.Necklace-text{
+    width: 244px;
+    height: 96px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2C2B2B;
+    margin-right: 16px;
+}
+
+.Hero-bottomright{
+    width: 260.23px;
+    height: 324px;
+}
+
+.Hero-right{
+    width: 479px;
+    height: 648px;
+}
+  
+.harlequin-container{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.serene-subContainer{
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serene-textContainer{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-right: 120px;
+}
+
+.collection-heading{
+    margin-top: 120px;
+    font-family: 'Cyrene';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 100%;
+    color: #983826;
+    text-align: center;
+}
+
+.explore-button{
+    border: 1px solid #983826;
+    background-color: #F2ECE7;
+    box-sizing: border-box;
+    padding: 12px 40px;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.explore-button p{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.explore-button:hover{
+    background-color: #983826;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+.serene-image{
+    width: 375px;
+    height: 500px;
+}
+
+.vintage-image{
+    width: 760px;
+    height: 647.89px;
+}
+
+.evergreen-image{
+    width: 375px;
+    height: 500px;
+}

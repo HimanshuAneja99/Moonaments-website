@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
+</head>
+<body>
+
+ <!-- Navigation Bar -->
+
+ <div class="navLogo">
+    <a href="/index.html">
+        <img class="logo" src="Media/Homepage Images/Logo.png"/>
+    </a>
+</div>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <img class="hamburgerMenu" src="Media/Icons/Cross.svg" />
+    </a>
+    <div class="navLogo">
+        <img class="logo" src="Media/Homepage Images/Logo.png" />
+    </div>
+    <div class="overlay-content">
+        <div class="catalogMenu">
+            <span class="menuHeader">Catalog</span>
+            <div class="menuElements">
+                <div class="row1menu">
+                    <a href="/Necklaces.html" onclick="closeNav()">Necklaces</a>
+                    <a href="#" onclick="closeNav()">Earrings</a>
+                    <a href="#" onclick="closeNav()">Bracelets</a>
+                </div>
+                <div class="row2menu">
+                    <a href="#" onclick="closeNav()">Rings</a>
+                    <a href="#" onclick="closeNav()">Bookmarks</a>
+                    <a href="#" onclick="closeNav()">Coasters</a>
+                </div>
+            </div>
+        </div>  
+      <a href="#" onclick="closeNav()" class="menuHeader">About Us</a>
+      <a href="#" onclick="closeNav()" class="menuHeader">Store Policy</a>
+      <a href="/Blog.html" onclick="closeNav()" class="menuHeader">Blog</a>
+    </div>
+  </div>
+  <span class="menuContainer" onclick="openNav()">
+    <img class="hamburgerMenu" src="Media/Icons/Hamburger Menu.svg" />
+    </span>
+
+        
+
+        <!-- Blog Cards     -->
+
+
+        <div class="blogHeader">
+            <h1>Blog</h1>
+        </div>    
+
+        <div class="cardsContainer">
+            <div class="blogCard1">
+                <div class="cardImage">
+                    <img src="Media/Blog Page Images/Blog Card 01.png">
+                </div>
+                <div class="cardText">
+                    <h1 class="cardHeader">Resin Care Tips</h1>
+                        <p>Resin jewellery is easy to maintain and can last forever. It is all about taking care of
+                            the jewellery. Here are some tips and tricks for you.  To know more....
+                        
+        
+                        </p>
+                        <button class="readButton"> 
+                            <p>Read More</p>
+                        </button>
+                </div>
+            </div>
+
+            <div class="blogCard2" >
+                <div class="cardText">
+                    <h1 class="cardHeader">Style Hacks</h1>
+                        <p>Confused about accessorizing? Well, then this is for you. Each unique collection
+                            calls for pairing with the right clothes for the right vibe.
+                            Ready to party or attend the formal office dinner? Well...
+                            
+                        </p>
+                        <button class="readButton"> 
+                            <p>Read More</p>
+                        </button>
+                </div>
+
+                <div class="cardImage">
+                    <img src="Media/Blog Page Images/Blog Card 02.png">
+                </div>
+            </div>
+
+        </div>
+        
+    <!-- Footer -->
+
+    <div class="footer">
+        <img src="Media/Icons/Footer Line.svg" class="footerLine">
+        <div class="footerContainer">
+            <div class="categoryDiv">
+                <h3 class="categoryHeader">Catalog</h3>
+                <a>Necklaces</a>
+                <a>Earrings</a>
+                <a>Rings</a>
+                <a>Bracelets</a>
+                <a>Coasters</a>
+                <a>Bookmarks</a>
+            </div>
+ 
+            <div class="categoryDiv">
+                 <h3 class="categoryHeader">General</h3>
+                 <a>About Us</a>
+                 <a>Blog</a>
+                 <a>Store Policy</a>
+                 <a>Terms & Conditions</a>
+             </div>
+ 
+             <div class="categoryDiv">
+                 <h3 class="categoryHeader">Contact Us</h3>
+                 <div class="socialContainer">
+                     <img src="Media/Icons/instagram.svg">
+                     <a href="https://www.instagram.com/moonaments/?hl=en">Instagram</a>
+                 </div>
+                 <div class="socialContainer">
+                     <img src="Media/Icons/whatsapp.svg">
+                     <a>Whatsapp</a>
+                 </div>
+                 <div class="socialContainer">
+                     <img src="Media/Icons/Twitter.svg">
+                     <a>Twitter</a>
+                 </div>
+                 <div class="socialContainer">
+                     <img src="Media/Icons/Email.svg">
+                     <a>moonaments@gmail.com</a>
+                 </div>   
+             </div>
+ 
+             <div class="categoryDiv">
+                 <div class="signupHeader">Sign up to receive MoonNews</div>
+                 <p class="signupText">
+                   Susbscribe to our newsletter and get a 10% discount on your first order
+                 </p>
+                 <div class="subscribeEmail">
+                       <form class="emailForm">
+                           <input type="email" class="formInput" placeholder="Your Email" required> 
+                           <button type="submit" class="signupButton"> 
+                             <p>Sign Up</p>
+                             </button>
+                       </form>
+                     
+                 </div>
+             </div>
+        </div>
+ 
+        <p class="copyrightText">Copyright © By Moonaments 2022 | All Rights Reserved</p>
+     </div>
+    
+    <script src="script.js"></script>    
+</body>
+</html>
